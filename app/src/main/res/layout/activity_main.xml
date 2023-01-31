@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Rakat"
+        android:layout_width="286dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Rakat"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="296dp"
+        android:layout_height="262dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/fajar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fajar" />
+
+        <RadioButton
+            android:id="@+id/zuhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zuhar" />
+
+        <RadioButton
+            android:id="@+id/asar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asar" />
+
+        <RadioButton
+            android:id="@+id/magrib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Magrib" />
+
+        <RadioButton
+            android:id="@+id/isha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isha" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Enter Your Namaz"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/prayed" />
+
+    <RadioButton
+        android:id="@+id/jamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="prayed with jamat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rakat" />
+
+    <RadioButton
+        android:id="@+id/prayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayed"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jamat"
+        app:layout_constraintTop_toBottomOf="@+id/jamat"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:text="Show"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.423" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
