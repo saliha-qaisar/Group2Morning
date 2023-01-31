@@ -3,6 +3,7 @@ package com.example.firstapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
         Button insert=findViewById(R.id.submit);
         Button show=findViewById(R.id.show);
+        Button commit=findViewById(R.id.commit);
+
+
+
         db = new mydbHandler(this);
        /* Model s1 = new Model("Ghzala","12","para 13", "para 12","zuhar");
          db.insertNamaz(s1);*/
@@ -79,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
 
              }
          });
+        commit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage = Uri.parse("https://github.com/saliha-qaisar/Group2Morning");
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+
+            }
+        });
 
 //        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 //            @Override
